@@ -1,0 +1,19 @@
+<div class="tabs is-medium">
+  <ul>
+    <li {{if eq .Object "home"}}class="is-active"{{end}}>
+      <a {{if ne .Object "home"}}href="/"{{end}}>Home</a>
+    </li>
+    <li {{if eq .Object "examples"}}class="is-active"{{end}}>
+      <a {{if ne .Object "examples"}}href="examples"{{end}}>Examples</a>
+    </li>
+    <li {{if eq .Object "internal"}}class="is-active"{{end}}>
+      <a {{if ne .Object "internal"}}href="internal"{{end}}>
+        <span class="icon is-small"><i class="las la-{{if user "isAuthenticated"}}un{{end}}lock" aria-hidden="true"></i></span>
+        <span>Internal</span>
+	{{if user "isAdmin"}}
+        <span class="icon is-small has-text-danger"><i class="las la-id-badge" aria-hidden="true"></i></span>
+        {{end}}
+      </a>
+    </li>
+  </ul>
+</div>

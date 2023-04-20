@@ -1,0 +1,27 @@
+<div hx-get="/fragments/navtabs?p=examples" hx-trigger="load" hx-swap="outerHTML"></div>
+
+<div class="columns">
+  <div class="column is-one-fifth">
+    <aside class="menu" hx-target="#example_content" hx-swap="innerHTML" _="on htmx:afterOnLoad take .is-active from .menu-item for event.target">
+      <ul class="menu-list">
+        <li><a class="menu-item {{if eq .Object ""}}is-active{{else}}{{if eq .Object "markdown"}}is-active{{end}}{{end}}" hx-get="/fragments/example?p=markdown" hx-push-url="examples?p=markdown">Markdown</a></li>
+        <li><a class="menu-item {{if eq .Object "forms"}}is-active{{end}}" hx-get="/fragments/example?p=forms" hx-push-url="examples?p=forms">Forms</a></li>
+        <li><a class="menu-item {{if eq .Object "dialogs"}}is-active{{end}}" hx-get="/fragments/example?p=dialogs" hx-push-url="examples?p=dialogs">Dialogs</a></li>
+        <li><a class="menu-item {{if eq .Object "tables"}}is-active{{end}}" hx-get="/fragments/example?p=tables" hx-push-url="examples?p=tables">Tables</a></li>
+      </ul>
+    </aside>
+  </div>
+  <div id="example_content" class="column is-three-fifths">
+    <div hx-get="/fragments/example?p={{if eq .Object ""}}markdown{{else}}{{.Object}}{{end}}" hx-trigger="load" hx-swap="outerHTML"></div>
+  </div>
+  <div class="column is-one-fifths">
+    <article class="message is-info mt-2">
+      <div class="message-body p-2">
+        <div id="example_description"></div>
+      </div>
+    </article>
+  </div>
+</div>
+
+<div hx-get="/fragments/footer" hx-trigger="load" hx-swap="outerHTML"></div>
+

@@ -1,0 +1,31 @@
+{
+    "port": 2000,
+    "logging": {
+        "level": "trace",
+        "use_console": true
+    },
+    "database": {
+        "file": "app_data.db"
+    },
+    "assets": {
+        "templates": "assets/templates",
+        "markdown": "assets/markdown"
+    },
+    "pages": {
+        "_default": {
+            "title": "Urban Octo Succotash - example application",
+            "static_base_url": "assets/static/",
+            "styles": [
+                "bulma_v0.9.4.min.css",
+                "bulma_tables_v1.2.5.min.css",
+                "https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css"
+            ],
+            "scripts_head": [
+                "htmx_v1.9.0.min.js",
+                "hyperscript_v0.9.8.min.js"
+            ],
+            "scripts_body": [
+            ]
+        }
+    }
+}

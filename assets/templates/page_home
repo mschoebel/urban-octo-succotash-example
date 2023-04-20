@@ -1,0 +1,4 @@
+<div hx-get="/fragments/navtabs?p=home" hx-trigger="load" hx-swap="outerHTML"></div>
+<div hx-get="/markdown/home" hx-trigger="load" hx-swap="outerHTML"></div>
+<div hx-get="/fragments/footer" hx-trigger="load" hx-swap="outerHTML"></div>
+

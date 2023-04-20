@@ -1,0 +1,22 @@
+<div id="modal" class="modal is-active" _="on closeModal remove me">
+  <div class="modal-background"></div>
+  <div class="modal-card">
+    <header class="modal-card-head">
+      <p class="modal-card-title">Hint</p>
+    </header>
+    <section class="modal-card-body">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+      cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+      proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </section>
+    <footer class="modal-card-foot is-block">
+      <span class="is-pulled-right">
+        <button class="button is-primary is-small" _="on click trigger closeModal">Ok</button>
+      </span>
+    </footer>
+  </div>
+</div>
+
