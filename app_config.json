@@ -4,6 +4,10 @@
         "level": "trace",
         "use_console": true
     },
+    "monitoring": {
+        "pprof": 9000,
+        "metrics": 9001
+    },
     "database": {
         "file": "app_data.db"
     },
