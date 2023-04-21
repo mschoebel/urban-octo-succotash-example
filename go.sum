@@ -40,6 +40,8 @@ github.com/mschoebel/urban-octo-succotash v0.0.0-20230420133509-2849cfb139eb h1:
 github.com/mschoebel/urban-octo-succotash v0.0.0-20230420133509-2849cfb139eb/go.mod h1:AK+W/jincNE9YYXdbBh7emCVapmv73O1eZkDkpESLpk=
 github.com/mschoebel/urban-octo-succotash v0.0.0-20230421064342-a248ae23a340 h1:y/2lq4v774+ri+sEjAF0Y6E6JPb1jtB4jc+nJhOS4Aw=
 github.com/mschoebel/urban-octo-succotash v0.0.0-20230421064342-a248ae23a340/go.mod h1:FdOxDSsTJraA8JhCo27F+a8nCcbS+oJO5Xj9rv3cnXM=
+github.com/mschoebel/urban-octo-succotash v0.0.0-20230421151959-d33b4ce5b46d h1:UWRObX/WSO2hRF2F3kZyJ+g95bph3bngfmNzaJ2P3Vk=
+github.com/mschoebel/urban-octo-succotash v0.0.0-20230421151959-d33b4ce5b46d/go.mod h1:6RcctUrv6z1QoRu5yU9EmcpXETiRc5ULD8lPnfbpBSk=
 github.com/pkg/errors v0.9.1/go.mod h1:bwawxfHBFNV+L2hUp1rHADufV3IMtnDRdf1r5NINEl0=
 github.com/prometheus/client_golang v1.15.0 h1:5fCgGYogn0hFdhyhLbw7hEsWxufKtY9klyvdNfFlFhM=
 github.com/prometheus/client_golang v1.15.0/go.mod h1:e9yaBhRPU2pPNsZwE+JdQl0KEt1N9XgF6zxWmaC0xOk=

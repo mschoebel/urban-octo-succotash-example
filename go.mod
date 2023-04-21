@@ -3,7 +3,7 @@ module github.com/mschoebel/urban-octo-succotash-example
 go 1.18
 
 require (
-	github.com/mschoebel/urban-octo-succotash v0.0.0-20230421064342-a248ae23a340
+	github.com/mschoebel/urban-octo-succotash v0.0.0-20230421151959-d33b4ce5b46d
 	gorm.io/gorm v1.25.0
 )
 

@@ -9,6 +9,10 @@ import (
 //go:embed assets/static/*
 var staticAssetsFS embed.FS
 
+var (
+	mLogins int
+)
+
 func main() {
 	// initialize application framework components
 	uos.ComponentSetup()
@@ -44,6 +48,12 @@ func main() {
 		uos.MarkdownHandler(),
 	)
 	uos.RegisterStaticAssets("/assets/static/", staticAssetsFS)
+
+	// register metric - count successful login attempts
+	mLogins = uos.Metrics.RegisterCounter(
+		"app_login_count",
+		"Number of successful logins.",
+	)
 
 	// start web application
 	uos.StartApp()
