@@ -1,25 +1,27 @@
-<div hx-get="/fragments/navtabs?p=internal" hx-trigger="load" hx-swap="outerHTML"></div>
+<section class="section">
+  <div hx-get="/fragments/navtabs?p=internal" hx-trigger="load" hx-swap="outerHTML"></div>
 
-{{if not (user "isAuthenticated")}}
-<article class="message is-warning mt-2">
-  <div class="message-body p-2">
-    You are not logged in.<br>
-    <button class="button is-small mt-2" hx-get="/dialogs/login" hx-target="body" hx-swap="beforeend">Login</button>
-  </div>
-</article>
-{{else}}
-<article class="message is-info mt-2">
-  <div class="message-body p-2">
-    Hello {{user "name"}}!<br>
-    <button class="button is-small mt-2" hx-post="/actions/logout">Logout</button>
-  </div>
-</article>
+  {{if not (user "isAuthenticated")}}
+  <article class="message is-warning mt-2">
+    <div class="message-body p-2">
+      You are not logged in.<br>
+      <button class="button is-small mt-2" hx-get="/dialogs/login" hx-target="body" hx-swap="beforeend">Login</button>
+    </div>
+  </article>
+  {{else}}
+  <article class="message is-info mt-2">
+    <div class="message-body p-2">
+      Hello {{user "name"}}!<br>
+      <button class="button is-small mt-2" hx-post="/actions/logout?csrf={{csrf}}">Logout</button>
+    </div>
+  </article>
 
-<div hx-get="/markdown/message_user" hx-trigger="load" hx-swap="outerHTML"></div>
-{{if user "isAdmin"}}
-<div hx-get="/markdown/message_admin" hx-trigger="load" hx-swap="outerHTML"></div>
-{{end}}
-{{end}}
+  <div hx-get="/markdown/message_user" hx-trigger="load" hx-swap="outerHTML"></div>
+  {{if user "isAdmin"}}
+  <div hx-get="/markdown/message_admin" hx-trigger="load" hx-swap="outerHTML"></div>
+  {{end}}
+  {{end}}
 
-<div hx-get="/fragments/footer" hx-trigger="load" hx-swap="outerHTML"></div>
+  <div hx-get="/fragments/footer" hx-trigger="load" hx-swap="outerHTML"></div>
+</section>
 

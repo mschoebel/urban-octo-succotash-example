@@ -3,7 +3,7 @@ module github.com/mschoebel/urban-octo-succotash-example
 go 1.18
 
 require (
-	github.com/mschoebel/urban-octo-succotash v0.0.0-20230421151959-d33b4ce5b46d
+	github.com/mschoebel/urban-octo-succotash v0.0.0-20230423110309-6cf3243e670f
 	gorm.io/gorm v1.25.0
 )
 
@@ -34,5 +34,5 @@ require (
 	modernc.org/libc v1.22.4 // indirect
 	modernc.org/mathutil v1.5.0 // indirect
 	modernc.org/memory v1.5.0 // indirect
-	modernc.org/sqlite v1.21.2 // indirect
+	modernc.org/sqlite v1.22.0 // indirect
 )

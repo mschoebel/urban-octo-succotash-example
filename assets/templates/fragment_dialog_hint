@@ -1,4 +1,4 @@
-<div id="modal" class="modal is-active" _="on closeModal transition opacity to 0 over 100ms then remove me">
+<div id="modal" class="modal is-active" _="on closeModal transition opacity to 0 over 500ms then remove me">
   <div class="modal-background"></div>
   <div class="modal-card">
     <header class="modal-card-head">
@@ -19,4 +19,3 @@
     </footer>
   </div>
 </div>
-
