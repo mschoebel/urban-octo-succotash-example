@@ -1,0 +1,8 @@
+<section class="section">
+  <article class="message is-info mt-2">
+    <div class="message-body p-2">
+      Hello {{user "name"}}!<br>
+      <button class="button is-small mt-2" hx-post="/actions/logout?csrf={{csrf}}">Logout</button>
+    </div>
+  </article>
+</section>

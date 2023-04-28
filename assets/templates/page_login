@@ -1,0 +1,9 @@
+<section class="hero is-medium mt-6" style="background-color: silver;">
+  <div class="hero-body">
+    <p class="title mb-5 has-text-centered">Login required</p>
+    <div hx-get="/forms/login" hx-trigger="load" hx-swap="outerHTML"></div>
+    <div class="is-pulled-right mt-2">
+      <button class="button is-black is-small" id="save-btn-login" hx-post="/forms/login?ref={{if ne .Object ""}}{{.Object}}{{else}}/{{end}}" hx-include="#login" hx-target="#form-login">Login</button>
+    </div>
+  </div>
+</section>

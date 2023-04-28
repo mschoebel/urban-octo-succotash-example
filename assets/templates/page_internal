@@ -22,6 +22,10 @@
   {{end}}
   {{end}}
 
+  <hr>
+  <p class="mb-6">
+    Here is a link to a <a href="/protected">protected page</a>. If you are not logged in, you are automatically redirected to the registered authentification page.
+  </p>
   <div hx-get="/fragments/footer" hx-trigger="load" hx-swap="outerHTML"></div>
 </section>
 

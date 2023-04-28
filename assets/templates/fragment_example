@@ -18,10 +18,7 @@ Invalid example.
 
 {{else if eq .Object "forms"}}
   <p>A login form.</p>
-  <div hx-get="/forms/login" hx-trigger="load" hx-swap="outerHTML"></div>
-  <div class="is-pulled-right mt-2">
-    <button class="button is-black is-small" hx-post="/forms/login" hx-include="#login" hx-target="#login">Login</button>
-  </div>
+  <div hx-get="/forms/login?btn=Login" hx-trigger="load" hx-swap="outerHTML"></div>
   <p class="mt-6">A data input form.</p>
   <div hx-get="/forms/data?btn=Save" hx-trigger="load" hx-swap="outerHTML"></div>
 

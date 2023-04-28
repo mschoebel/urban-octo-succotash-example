@@ -1,5 +1,11 @@
 {
     "port": 2000,
+    "base_dir": "/mnt/c/mschoebel/code/urban-octo-succotash-example-dev",
+
+    "app": {
+      "name": "Urban Octo Succotash Example Application"
+    },
+
     "logging": {
         "level": "trace",
         "use_console": true

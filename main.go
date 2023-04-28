@@ -29,6 +29,9 @@ func main() {
 		uos.PageHandler("examples"),
 		uos.PageHandler("internal"),
 
+		uos.PageHandler("login").AuthPage(),
+		uos.PageHandler("protected").Internal(),
+
 		uos.DialogHandler(
 			hintDialog{},
 			dataDialog{},
