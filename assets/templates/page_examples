@@ -1,5 +1,5 @@
 <section class="section">
-  <div hx-get="/fragments/navtabs?p=examples" hx-trigger="load" hx-swap="outerHTML"></div>
+  {{hxLoad "/fragments/navtabs?p=examples"}}
 
   <div class="columns">
     <div class="column is-one-fifth">
@@ -24,6 +24,6 @@
     </div>
   </div>
 
-  <div hx-get="/fragments/footer" hx-trigger="load" hx-swap="outerHTML"></div>
+  {{hxLoad "/fragments/footer"}}
 </section>
 

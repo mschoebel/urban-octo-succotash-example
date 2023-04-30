@@ -37,5 +37,8 @@
             "scripts_body": [
             ]
         }
+    },
+    "tuning": {
+        "htmx_preload": true
     }
 }

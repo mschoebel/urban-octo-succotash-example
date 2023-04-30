@@ -32,6 +32,8 @@ func main() {
 		uos.PageHandler("login").AuthPage(),
 		uos.PageHandler("protected").Internal(),
 
+		uos.ResourceHandler(personResource{}),
+
 		uos.DialogHandler(
 			hintDialog{},
 			dataDialog{},

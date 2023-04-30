@@ -80,6 +80,7 @@ func (t dataTable) DisplaySettings() uos.TableDisplayProperties {
 		IsStriped:     true,
 		IsMobileReady: true,
 		IsSelectable:  true,
+		IsExpandable:  true,
 	}
 }
 

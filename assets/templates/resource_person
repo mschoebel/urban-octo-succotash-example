@@ -1,0 +1,9 @@
+<div class="content">
+  <strong>{{.Name}}</strong><br>
+  {{.City}}<br>
+  <p class="is-size-7 mt-2">
+    Created: {{.CreatedAt}}<br>
+    Last Modification: {{.UpdatedAt}}
+  </p>
+</div>
+

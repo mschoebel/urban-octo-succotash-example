@@ -14,7 +14,7 @@ Invalid example.
 
 <div class="content">
 {{if eq .Object "markdown"}}
-  <div hx-get="/markdown/lorem_ipsum" hx-trigger="load" hx-swap="outerHTML"></div>
+  {{hxLoad "/markdown/lorem_ipsum"}}
 
 {{else if eq .Object "forms"}}
   <p>A login form.</p>
