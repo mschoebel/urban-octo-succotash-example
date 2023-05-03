@@ -3,6 +3,10 @@
     <p>
       <strong>{{app "name"}}</strong> by <a href="https://mschoebel.info">Michael Schöbel</a>. The source code is licensed <a href="http://opensource.org/licenses/mit-license.php">MIT</a>.
     </p>
+    <p>
+    {{TR "Have a nice day!"}}<br>
+    {{languageSelector}}
+    </p>
   </div>
 </footer>
 

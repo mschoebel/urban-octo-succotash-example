@@ -21,6 +21,10 @@
         "templates": "assets/templates",
         "markdown": "assets/markdown"
     },
+    "i18n": {
+        "locale": "assets/locale",
+        "languages": ["en", "de", "es"]
+    },
     "pages": {
         "_default": {
             "title": "Urban Octo Succotash - example application",

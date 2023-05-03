@@ -68,7 +68,7 @@ func (f loginForm) Save(is string, items uos.FormItems) (*uos.ResponseAction, er
 	}
 
 	uos.Metrics.CounterInc(mLogins)
-	return uos.ResponseSetSessionCookie(user.ID), nil
+	return uos.ResponseSetSessionCookie(user.ID, user.Language), nil
 }
 
 type dataForm struct{}
