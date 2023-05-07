@@ -3,7 +3,7 @@ module github.com/mschoebel/urban-octo-succotash-example
 go 1.18
 
 require (
-	github.com/mschoebel/urban-octo-succotash v0.0.0-20230503193607-798624cbb344
+	github.com/mschoebel/urban-octo-succotash v0.0.0-20230507141214-9c36aa62c5dc
 	gorm.io/gorm v1.25.0
 )
 
@@ -24,13 +24,13 @@ require (
 	github.com/matttproud/golang_protobuf_extensions v1.0.4 // indirect
 	github.com/prometheus/client_golang v1.15.1 // indirect
 	github.com/prometheus/client_model v0.4.0 // indirect
-	github.com/prometheus/common v0.42.0 // indirect
+	github.com/prometheus/common v0.43.0 // indirect
 	github.com/prometheus/procfs v0.9.0 // indirect
 	github.com/remyoudompheng/bigfft v0.0.0-20230129092748-24d4a6f8daec // indirect
 	github.com/rs/zerolog v1.29.1 // indirect
 	github.com/vorlif/spreak v0.4.0 // indirect
 	golang.org/x/crypto v0.8.0 // indirect
-	golang.org/x/sys v0.7.0 // indirect
+	golang.org/x/sys v0.8.0 // indirect
 	golang.org/x/text v0.9.0 // indirect
 	google.golang.org/protobuf v1.30.0 // indirect
 	modernc.org/libc v1.22.5 // indirect

@@ -17,6 +17,10 @@ func (t dataTable) ModelName() string {
 	return "person"
 }
 
+func (t dataTable) ResourceName() string {
+	return "person"
+}
+
 func (t dataTable) LoadData(c uos.TableConfiguration) (uos.TableData, error) {
 	var dataList []person
 
@@ -43,11 +47,11 @@ func (t dataTable) ColumnInfo(columns []string) []uos.TableColumn {
 				"name": true,
 			}[c],
 			Format: map[string]uos.TableFormatFunc{
-				"name": func(id uint, raw interface{}) interface{} {
+				"name": func(id interface{}, raw interface{}) interface{} {
 					if s, ok := raw.(string); ok {
 						return template.HTML(
 							fmt.Sprintf(
-								`<a href="#" hx-get="/dialogs/data?id=%d" hx-target="body" hx-swap="beforeend">%s</a>`,
+								`<a href="#" hx-get="/dialogs/data?id=%v" hx-target="body" hx-swap="beforeend">%s</a>`,
 								id,
 								template.HTMLEscapeString(s),
 							),
