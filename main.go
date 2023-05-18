@@ -2,6 +2,7 @@ package main
 
 import (
 	"embed"
+	"net/http"
 
 	uos "github.com/mschoebel/urban-octo-succotash"
 )
@@ -53,6 +54,7 @@ func main() {
 		uos.MarkdownHandler(),
 	)
 	uos.RegisterStaticAssets("/assets/static/", staticAssetsFS)
+	uos.RegisterPageConfigurationHook(pageConfiguration)
 
 	// register metric - count successful login attempts
 	mLogins = uos.Metrics.RegisterCounter(
@@ -62,4 +64,18 @@ func main() {
 
 	// start web application
 	uos.StartApp()
+}
+
+func pageConfiguration(
+	name string, r *http.Request,
+	pc *uos.PageConfiguration,
+) {
+	uos.Log.TraceContext("pageConfiguration", uos.LogContext{"name": name})
+
+	switch name {
+	case "examples":
+		pc.Title = "EXAMPLES"
+	case "internal":
+		pc.Styles[0] = "bulma_dark.min.css"
+	}
 }
