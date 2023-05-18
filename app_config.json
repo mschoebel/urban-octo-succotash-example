@@ -18,6 +18,7 @@
         "file": "app_data.db"
     },
     "assets": {
+        "dynamic": "assets/dynamic",
         "templates": "assets/templates",
         "markdown": "assets/markdown"
     },

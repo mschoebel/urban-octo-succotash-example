@@ -37,8 +37,8 @@ github.com/mattn/go-isatty v0.0.18 h1:DOKFKCQ7FNG2L1rbrmstDN4QVRdS89Nkh85u68Uwp9
 github.com/mattn/go-isatty v0.0.18/go.mod h1:W+V8PltTTMOvKvAeJH7IuucS94S2C6jfK/D7dTCTo3Y=
 github.com/matttproud/golang_protobuf_extensions v1.0.4 h1:mmDVorXM7PCGKw94cs5zkfA9PSy5pEvNWRP0ET0TIVo=
 github.com/matttproud/golang_protobuf_extensions v1.0.4/go.mod h1:BSXmuO+STAnVfrANrmjBb36TMTDstsz7MSK+HVaYKv4=
-github.com/mschoebel/urban-octo-succotash v0.0.0-20230518094615-9b236b7ecf6f h1:TdJk596645NW8SfkLgyFKLVbWxpxByISQcgdbLimls8=
-github.com/mschoebel/urban-octo-succotash v0.0.0-20230518094615-9b236b7ecf6f/go.mod h1:QVxWZ7ZmtxJK5dZhWqXYb7Hh5m476CC/wGJ0AuNpf+4=
+github.com/mschoebel/urban-octo-succotash v0.0.0-20230518130756-761eabffa428 h1:rhkNLbf8f8DndW4dzrtNiVcvWznZOKUw8HOmKv8rPC4=
+github.com/mschoebel/urban-octo-succotash v0.0.0-20230518130756-761eabffa428/go.mod h1:QVxWZ7ZmtxJK5dZhWqXYb7Hh5m476CC/wGJ0AuNpf+4=
 github.com/pkg/errors v0.9.1/go.mod h1:bwawxfHBFNV+L2hUp1rHADufV3IMtnDRdf1r5NINEl0=
 github.com/pmezard/go-difflib v1.0.0 h1:4DBwDE0NGyQoBHbLQYPwSUPoCMWR5BEzIk/f1lZbAQM=
 github.com/prometheus/client_golang v1.15.1 h1:8tXpTmJbyH5lydzFPoxSIJ0J46jdh3tylbvM1xCv0LI=

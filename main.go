@@ -54,6 +54,7 @@ func main() {
 		uos.MarkdownHandler(),
 	)
 	uos.RegisterStaticAssets("/assets/static/", staticAssetsFS)
+	uos.RegisterDynamicAssets("/assets/dynamic/")
 	uos.RegisterPageConfigurationHook(pageConfiguration)
 
 	// register metric - count successful login attempts
@@ -76,6 +77,6 @@ func pageConfiguration(
 	case "examples":
 		pc.Title = "EXAMPLES"
 	case "internal":
-		pc.Styles[0] = "bulma_dark.min.css"
+		pc.Styles[0] = "/assets/dynamic/bulma_dark.min.css"
 	}
 }
