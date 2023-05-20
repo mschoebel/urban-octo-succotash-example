@@ -33,7 +33,9 @@ func main() {
 		uos.PageHandler("login").AuthPage(),
 		uos.PageHandler("protected").Internal(),
 
-		uos.ResourceHandler(personResource{}),
+		uos.ResourceHandler(
+			personResource{},
+		),
 
 		uos.DialogHandler(
 			hintDialog{},
@@ -53,8 +55,10 @@ func main() {
 		uos.FragmentHandler(),
 		uos.MarkdownHandler(),
 	)
+
 	uos.RegisterStaticAssets("/assets/static/", staticAssetsFS)
 	uos.RegisterDynamicAssets("/assets/dynamic/")
+
 	uos.RegisterPageConfigurationHook(pageConfiguration)
 
 	// register metric - count successful login attempts

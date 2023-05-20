@@ -73,7 +73,13 @@ func (t dataTable) ColumnDefault() []string {
 func (t dataTable) Actions() *uos.TableActions {
 	return &uos.TableActions{
 		uos.TableActionButton("plus", "Add", "").Dialog("data"),
-		uos.TableActionButton("skull-crossbones", "Delete", "").Post("/tables/data?action=delete", ".selection"),
+		uos.TableActionButton(
+			"skull-crossbones", "Delete", "",
+		).Post(
+			"/tables/data?action=delete", ".selection",
+		).Confirmation(
+			"Delete entries", "Do you really want to delete the selected entries?",
+		),
 	}
 }
 
